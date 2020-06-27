@@ -7,3 +7,11 @@ Similarly id override class
 
 And inline styles overrides outline style
 !important will override everyother style
+
+Absolute length -px
+Relative length -em,rem
+
+Variables :
+--var_name : ;
+var(--var_name)
+
