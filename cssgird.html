@@ -23,7 +23,17 @@
         background: LightGray;
         /* Only change code below this line */
         display: grid;
-        grid-template-columns: 100px 100px 100px;
+        /*grid-template-columns: 100px 100px 100px; /*now the rows are there automaticlly*/
+        /*grid-template-rows: 50px 50px;*/
+        /*css grid units*/
+        /*grid-template-columns: auto 50px 10% 2fr 1fr;
+        /*auto -- space required,10% -- percent of screen, fr -- divides the screen into frames and both fr and % can be resizable*/
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        /*grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        We can do gap in one attribute*/
+        grid-gap: 20px 30px;
         /* Only change code above this line */
     }
 </style>
