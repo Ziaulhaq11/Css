@@ -27,7 +27,10 @@
         width: 100%;
         background: LightGray;
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /*1fr *3*/
+        grid-template-columns: repeat(autofit, minmax(60px, 1fr)); /*fits to the screen
+        grid-template-columns: repeat(autofill, minmax(60px, 1fr)); /*it will autofill columns
+        /*grid-template-columns: repeat(3, minmax(90px, 1fr));
+        /*grid-template-columns: repeat(3, 1fr); /*1fr *3*/
         /*grid-template-rows: 1fr 1fr 1fr;*/
         grid-template-rows: repeat(2, 1fr 50px) 20px;  /*1fr 50px 1fr 50px 20px*/
         grid-gap: 10px;
