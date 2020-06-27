@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Pangolin&family=Piedra&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
     <style>
-    	<!-- Css selectors -->
-    	p {color: red;}
+        [type='checkbox']{
+            margin: 20px 10px 20px 5px;
+        }
+        .bluetext {
+            padding: 5rem;
+        }
+        body {
+            background-color: burlywood;
+            color: ;
+            font-family: monospace;
+        }
+        #orangetext{
+            color: rgb(255,45,54)
+        }
+        .pinktext {
+            color: #008055 !important;
+        }
+        .bluetext{
+            color: #00f;
+        }
     </style>
+
+
 </head>
 <body>
-    <h1 style="color: blue;">First thing</h1>
-    <p> Hello how are you</p>
+    <!--inline style-->
+    <h2 class="pinktext bluetext" id="orangetext" style="color:wheat">Cat photoapp</h2>
+    <h3 style="color:green">photo</h3>
+
+    <main>
+        <p>Click here to view more <a href="#">Cat photos</a></p>
+        <a href="#"><img class="image" src="cat.jpg" alt="A beautiful cat"></a>
+        <p class="bluetet treatment">Things cats love : </p>
+        <ul>
+            <li>cat nip </li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+            <!--id gets higher priority than class so id properties will apply-->
+        </ul>
+        <p class="bluetext">Top things cat hate : </p>
+        <ol>
+            <li>flea treatment</li>
+            <li>other cats</li>
+            <li>thunder</li>
+        </ol>
+        <div class="bluetexting" id="static">
+            <h3>Bluetexxt intern</h3>
+        </div>
+        <form action="/submit-catphoto" id="cat-photo-form">
+            <label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+            <label><input type="radio" name="indoor-outdoor" checked>Outdoor</label>
+            <label><input type="checkbox" name="personality" checked>Loving</label>
+            <label><input type="checkbox" name="personality">Lazy</label>
+            <label><input type="checkbox" name="personality">Energetic</label>
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
 </body>
+
 </html>

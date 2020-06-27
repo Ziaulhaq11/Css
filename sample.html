@@ -1,24 +1,96 @@
-<style>
-    p {color: red}
-</style>
-
-<h2 style="color:blue">Cat photoapp</h2>
-
-<main>
-    <p>Click here to view more <a href="#">Cat photos</a></p>
-    <a href="#"><img src="cat.jpg" alt="A beautiful cat"></a>
-    <div>
-        <p>Things cats love : </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Pangolin&family=Piedra&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        h2 {
+            color: red;
+            background:silver;
+            font-size: 30px;
+            font-family: MuseoModerno, monospace;
+            border-color:red;
+            border-width:5px;
+            border-style:groove;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            margin-left: 40px;
+        }
+        .bluetext {
+            color: blue;
+            font-size: 30px;
+            font-family: monospace;
+            padding: 20px 40px 20px 40px;
+            margin: 20px 40px 20px 40px;
+        }
+        .image{
+            width :400px;
+            border-color: green;
+            border-width: 5px;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        .bluetexting {
+            background-color: maroon;
+            border-width: 5px;
+            border-style: double;
+            border-color: mediumorchid;
+            margin: -20px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 40px;
+        }
+        #static {
+            background-color: lightskyblue;
+        }
+        #cat-photo-form{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!--inline style-->
+    <h2>Cat photoapp</h2>
+    <h3 style="color:green">photo</h3>
+    
+    <main>
+        <p>Click here to view more <a href="#">Cat photos</a></p>
+        <a href="#"><img class="image" src="cat.jpg" alt="A beautiful cat"></a>
+        <p class="bluetext treatment">Things cats love : </p>
         <ul>
             <li>cat nip </li>
             <li>laser pointers</li>
-            <li>lasagna</li>
+            <li>lasagna</li> <!--id gets higher priority than class so id properties will apply-->
         </ul>
-        <p>Top things cat hate</p>
+        <p class="bluetext">Top things cat hate : </p>
         <ol>
             <li>flea treatment</li>
             <li>other cats</li>
             <li>thunder</li>
         </ol>
-    </div>
-</main>
+        <div class="bluetexting" id="static">
+            <h3>Bluetexxt intern</h3>
+        </div>
+        <form action="/submit-catphoto" id="cat-photo-form">
+            <label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+            <label><input type="radio" name="indoor-outdoor" checked>Outdoor</label>
+            <label><input type="checkbox" name="personality" checked>Loving</label>
+            <label><input type="checkbox" name="personality">Lazy</label>
+            <label><input type="checkbox" name="personality">Energetic</label>
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </main>
+</body>
+</html>
+
+

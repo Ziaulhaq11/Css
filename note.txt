@@ -1,0 +1,9 @@
+rem or em is based on font 
+
+We can define two classes and order doesnt matter which one is first or not
+But in styles which ever class is last that will apply.
+
+Similarly id override class
+
+And inline styles overrides outline style
+!important will override everyother style
