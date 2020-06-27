@@ -14,4 +14,11 @@ Relative length -em,rem
 Variables :
 --var_name : ;
 var(--var_name)
+previously we defined variable in parent class then it applies to all
+child classes
+If we want to define global variable inside root element
+:root {
+    var
+}
 
+Media queries can change variables depends on the size of screen
