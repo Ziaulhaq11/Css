@@ -22,3 +22,7 @@ If we want to define global variable inside root element
 }
 
 Media queries can change variables depends on the size of screen
+
+Align items we write in container
+
+Align self in individual item and it will overwrite align-items
