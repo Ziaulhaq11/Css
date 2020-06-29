@@ -9,12 +9,11 @@
 
     .item3 {
         background: PaleTurquoise;
-        grid-area: 2/1/3/4; /*without area template*/
+        /*without area template*/
     }
 
     .item4 {
         background: LightPink;
-        text-align: center;
     }
 
     .item5 {
@@ -28,17 +27,10 @@
         width: 100%;
         background: LightGray;
         display: grid;
-        grid-template-columns: repeat(autofit, minmax(60px, 1fr)); /*fits to the screen
-        grid-template-columns: repeat(autofill, minmax(60px, 1fr)); /*it will autofill columns
-        /*grid-template-columns: repeat(3, minmax(90px, 1fr));
-        /*grid-template-columns: repeat(3, 1fr); /*1fr *3*/
-        /*grid-template-rows: 1fr 1fr 1fr;*/
-        grid-template-rows: repeat(2, 1fr 50px) 20px;  /*1fr 50px 1fr 50px 20px*/
-        grid-gap: 10px;
         grid-template-areas:
             /* Only change code below this line */
             "header header header"
-            "advert content content"
+            "footer content footer"
             "footer footer footer";
         /* Only change code above this line */
     }

@@ -1,5 +1,7 @@
 rem or em is based on font 
 
+label element in html
+
 We can define two classes and order doesnt matter which one is first or not
 But in styles which ever class is last that will apply.
 
@@ -10,6 +12,7 @@ And inline styles overrides outline style
 
 Absolute length -px
 Relative length -em,rem
+min-height : 200px i think this will not change and if we dont apply min height then it will take space of what it required
 
 Variables :
 --var_name : ;
@@ -20,9 +23,61 @@ If we want to define global variable inside root element
 :root {
     var
 }
+if we define variable in root and in other element then root variable overrides other
 
 Media queries can change variables depends on the size of screen
 
-Align items we write in container
+Align items : if we write in container
 
-Align self in individual item and it will overwrite align-items
+Align self : in individual item and it will overwrite align-items
+
+body{styles}
+
+color: blue;
+            border-color:red;
+            border-style: double;
+            border-width: 5px;
+            border-radius: 30px;
+            font-size: 1em;
+            font-family: monospace;
+            background-color:slategray;
+            margin: 50px 50px 40px 40px;  /*top right bottom left*/
+            padding: 20px 20px 20px 20px;
+            margin:20px
+            padding : 5px
+    
+    [type:checkbox]{}
+
+--var-name : value
+:root{} For globalvariables
+@media(max-width :300px) {
+    :root {
+        --var_name
+    }
+}
+
+Grid : 
+When i insert display set to grid it fill up entire space
+In Grid1 we set styles to the container not to individual element.
+display: Grid
+grid-template-columns : 100px 100px 100px
+grid-template-rows : 100px 100px
+grid-template-columns : auto 1fr 10% 50px
+grid-template-rows : same as above
+grid-column-gap : 20px
+grid-row-gap : 20px
+grid-gap :20px 30px
+grid-column : 2/4  (from 2 to 4)
+grid-row : 2/4  (from 2 to 4)
+justify-self:center (to align horizontally)
+align-self : center (to align vertically)
+align-items :
+justify-items :
+
+Grid area template
+container class should have a grid-template-areas property similar to the preview but has . instead of the advert area.
+grid-template-area : header,footer,advert,. .is used to define an empty cell
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
+
+

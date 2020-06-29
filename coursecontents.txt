@@ -39,8 +39,8 @@
 ⌨️ (0:41:38) Use CSS Variables to change several elements at once
 ⌨️ (0:42:54) Create a custom CSS Variable
 ⌨️ (0:43:33) Use a custom CSS Variable
-⌨️ (0:44:39) Attach a Fallback value to a CSS Variable
-⌨️ (0:45:25) Cascading CSS variables
+⌨️ (0:44:39) Attach a Fallback value to a CSS Variable (backup)
+⌨️ (0:45:25) Cascading CSS variables (global and local variable)
 ⌨️ (0:46:44) Change a variable for a specific area
 ⌨️ (0:47:08) Use a media query to change a variable
 ⌨️ (0:48:06) Create Your First CSS Grid
