@@ -56,7 +56,7 @@
 ⌨️ (0:57:33) Align an Item Vertically using align-self
 ⌨️ (0:58:04) Align All Items Horizontally using justify-items
 ⌨️ (0:58:31) Align All Items Vertically using align-items
-⌨️ (0:58:58) Divide the Grid Into an Area Template
+⌨️ (0:58:58) Divide the Grid Into an Area Template 
 ⌨️ (0:59:59) Place Items in Grid Areas Using the grid-area Property
 ⌨️ (1:01:00) Use grid-area Without Creating an Areas Template
 ⌨️ (1:02:43) Reduce Repetition Using the repeat Function

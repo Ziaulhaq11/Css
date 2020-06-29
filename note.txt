@@ -73,6 +73,9 @@ justify-self:center (to align horizontally)
 align-self : center (to align vertically)
 align-items :
 justify-items :
+grid-template-area : header,footer,advert,.
+grid-area : 2/1/3/4  (srow,scol,erow,ecol)
+grid-template-columns/rows : repeat(2, 1fr 50px) 20px  
 
 Grid area template
 container class should have a grid-template-areas property similar to the preview but has . instead of the advert area.
