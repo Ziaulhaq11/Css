@@ -27,13 +27,15 @@ if we define variable in root and in other element then root variable overrides 
 
 Media queries can change variables depends on the size of screen
 
-Align items : if we write in container
+Align items : we write in container
 
 Align self : in individual item and it will overwrite align-items
 
 body{styles}
 
+
 color: blue;
+            border-radius: 5px;
             border-color:red;
             border-style: double;
             border-width: 5px;
@@ -76,6 +78,9 @@ justify-items :
 grid-template-area : header,footer,advert,.
 grid-area : 2/1/3/4  (srow,scol,erow,ecol)
 grid-template-columns/rows : repeat(2, 1fr 50px) 20px  
+grid-template-columns: repeat(3, minmax(90px, 1fr));
+grid-template-columns : repeat(autofill,minmax(60px, 1fr)) (fills only the space of content is required)
+grid-template-columns : repeat(autofit,minmax(60px, 1fr))  (fills the entire space)
 
 Grid area template
 container class should have a grid-template-areas property similar to the preview but has . instead of the advert area.
@@ -84,3 +89,33 @@ grid-template-area : header,footer,advert,. .is used to define an empty cell
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
 
 
+auto in grid stretches teh screen fully if available if others are auto otherwise it will take only the screen which they required
+
+Grid in grid
+.item3 {
+        background: PaleTurquoise;
+        grid-area: content;
+        /* Only change code below this line */
+        display:grid;
+        grid-template-columns: auto  1fr;
+
+Flex:
+display: flex; /*row is default direction of flex*/
+        flex-direction: column;
+        flex-direction: row-reverse;
+
+justify-content : center  if we put then in container the content will be in the center of container, if start then at the start of teh container
+justify-content : flex start  for row it pushes to start of container and for column it pushes upwards
+ justify-content : flex end  (usually it goes to right end but if flex is set to column then it will go down and up for flex start)
+ align-items : it moves vertically
+ center etc
+ stretch it stretches the content
+ baseline
+ flex-wrap : wrap and moves item to next row
+ I think width is very important if its not there nothing display
+ flex-shrink : 1(2other) now this item will be 2 times bigger than other
+ flex-grow : 1(2other) now this item will be 2 times smaller than other
+flex-basis : 10em (20em) now this will be smaller than second
+flex 0 1 auto default : grow shrink basis  /*important*/
+order : 2(1)
+align-self

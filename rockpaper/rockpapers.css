@@ -1,0 +1,59 @@
+body {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+.heading {
+    background-color: white;
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    border-style: solid;
+    border-spacing: 200px;
+    justify-content: center;
+    color: white;
+}
+
+.user{
+    background-color: red;
+    font-size: small;
+    border: red;
+    border-style: solid;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+#result {
+    color: white;
+    text-align: center;
+}
+
+#rock {
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    flex-basis: content;
+}
+
+#paper {
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+#scissor {
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+#move {
+    color: white;
+    text-align: center;
+}
