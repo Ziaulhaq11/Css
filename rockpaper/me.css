@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: white;
+    padding: 1rem;
+    color: black;
+}
+
+.sore {
+    position: relative;
+    font-size: 2rem;
+    color: white;
+    margin: 3rem auto;
+    border: 0.3rem solid white;
+    width: 20rem;
+    height: 8rem;
+    text-align: center;
+    padding-top: 1.8rem;
+    font-size: 3.5rem;
+    border-radius: .5rem;
+}
+
+#user {
+    position: absolute;
+    background-color: red;
+    top: 2.5rem;
+    left: -2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#comp {
+    position: absolute;
+    background-color: red;
+    top: 2.5rem;
+    right: -2.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.message {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.images {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.image {
+    border: .4rem solid white;
+    border-radius: 50%;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.image:hover {
+    background-color: whitesmoke;
+}
+
+.move {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 1rem;
+}

@@ -5,6 +5,7 @@ body {
 .heading {
     background-color: white;
     text-align: center;
+    padding: 20px;
 }
 
 .score {

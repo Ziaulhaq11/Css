@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.781);
+    background-color: rgb(58, 55, 55);
 }
 
 header {
@@ -16,6 +16,8 @@ header {
 header>h1 {
     color: black;
     text-align: center;
+    font-size: 40px;
+    font-weight: 600;
     font-family: Asap, sans-serif;
 }
 
@@ -33,7 +35,7 @@ header>h1 {
 }
 
 .badge {
-    background: rgb(228, 78, 78);
+    background: rgba(214, 22, 22, 0.822);
     font-size: 14px;
     padding: 2px 10px;
 }   
@@ -42,12 +44,14 @@ header>h1 {
     position: absolute;
     left: -25px;
     top: 25px;
+    font-weight: 550;
 }
 
 #comp {
     position: absolute;
-    right: -40px;
+    right: -30px;
     top: 25px;
+    font-weight: 550;
 }
 
 #result {
@@ -73,7 +77,7 @@ header>h1 {
 
 .option:hover{
     cursor: pointer;
-    background: rgba(66, 65, 65, 0.726);
+    background: rgba(245, 245, 245, 0.452);
 }
 
 #move{
@@ -83,3 +87,4 @@ header>h1 {
     font-weight: bold;
     margin-top: 20px;
 }
+

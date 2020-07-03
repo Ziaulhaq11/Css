@@ -40,6 +40,7 @@ color: blue;
             border-style: double;
             border-width: 5px;
             border-radius: 30px;
+	    border: none;
             font-size: 1em;
             font-family: monospace;
             background-color:slategray;
@@ -47,6 +48,14 @@ color: blue;
             padding: 20px 20px 20px 20px;
             margin:20px
             padding : 5px
+	   text-align : center	
+	    text-decoration : none; this will used to in 'a' tag elements where some decoration is already applied. 
+		and if we want to change the color of anchor elements we have to specifically mention in css. if we do to parent it doesnt apply.
+	    list-style : none
+	    background-image : url();
+	    background position : center
+		background size  : cover this will adjust the background image size based on webpage.
+	    text-shadow: 3px 3px 3px black; /*right or leftshadow  top or bottom shadow  sizeof the  shadow*/
     
     [type:checkbox]{}
 
@@ -119,3 +128,98 @@ flex-basis : 10em (20em) now this will be smaller than second
 flex 0 1 auto default : grow shrink basis  /*important*/
 order : 2(1)
 align-self
+
+Selectors : 
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+* {}
+.links li:nth-child(1)
+Specificity : element selecor are lower than classes.classes are lower than id and id is lower than inline style and most importantly 'important'
+margin  : 0px auto (auto sets in centre if your width is 100% or less than)
+
+
+BOx model : By default the box-sizing set to content model
+ By default the margins were set to the elements we can remove them by setting margin and padding to 0.And box sizing is border-box.
+Box sizing helps that we dont need to scroll through left and right
+when we put width 100% and padding to 20px then the screen fill up and we need to scroll right 
+    width: 300px;
+    padding: 20px 20px; 
+
+Rem to pixels
+16 pixels - 1rem
+But we can set it 62.5% and then 1rem = 10pixels
+
+Button : 
+background: none; /*background color not works here*/
+
+Blocks : 
+block      -- we can give height and width apply
+inline     -- we can give height  and width doesnt apply margin applies to the left and right only not up and down.
+inlineblock  -- we can give all properties as block.
+
+Positioning : 
+I think we need to set the  height to html and body to 100% or some. then it works
+/*by default it was set to static after setting to absolute it doesnt care about container it sets where we set*/
+Css look for position of the parent first if parent was set to relative and child was set to absolute then it takes relative*/
+
+Positions :
+Static  -- default position and it doesnt apply positioning like top,bottom etc. these doesnt work.
+Absolute   -- it doesnt care about the container so if you set top to 0rem then it will go top on webpage not on container 
+Relative   -- it care about container so if you set to 0rem it will set in the container
+Fixed    -- it will stick in one place
+Sticky   -- it will stick once it reaches some condition like (top:0) when it reaches.
+
+transform: translate(-50%, -50%);  /*x and y*/
+
+
+Pseudo elements : 
+
+h1::after {
+    content: 'me';
+}
+
+h1::before {
+    content: 'me';
+
+button:hover {
+background-color:
+cursor : pointer;
+
+input:focus{
+background-color:
+
+Float : 
+ 
+used to position the elements but problem is it breaks other content to fix this we need to create a class called clear after the elements and :
+.box1 {
+    float: left;  
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
