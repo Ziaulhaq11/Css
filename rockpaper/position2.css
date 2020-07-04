@@ -1,0 +1,72 @@
+* {
+    padding: 0em;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: sans-serif;
+    background-color: grey;
+    height: 150%;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+    background-color: tomato;
+    text-transform: uppercase;
+}
+
+.boxes {
+    width: 100%;
+    text-align: center;
+    background: green;
+    padding: 20px;
+    position:absolute;
+}
+
+.box {
+    font-weight: bold;
+    width: 60%;
+    margin: 0px auto;
+    padding: 40px;
+    font-size: 24px;
+}
+
+.box1{
+    background: greenyellow;
+}
+
+.box2 {
+    background: indigo;
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+}
+
+.box3{
+    background: lightblue;
+    position: relative;
+    bottom: 150px;
+}
+
+.box4{
+    background: lightseagreen;
+    position: relative;
+    bottom: 220px;
+    left: 50px;
+}
+/*-webkit-transform:translateX(-50%); to put it centre horizontally every time*/
+
+.dummybox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: grey;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

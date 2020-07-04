@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: rgba(0, 0, 0, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    color: black;
+    background-color: white;
+    padding : 15px 0;
+}
+
+#score {
+    text-align: center;
+    border: 3px solid white;
+    width: 150px;
+    padding: 10px 0px;
+    margin: 20px auto;
+    font-size: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.badge {
+    background-color:red;
+    font-size: 14px;
+}
+
+#user {
+    position: absolute;
+    top: 20px;
+    left: -18px;
+}
+
+#comp {
+    position: absolute;
+    top: 20px;
+    right: -18px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.options {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.option {
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: teal;
+}
+
+#move {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}

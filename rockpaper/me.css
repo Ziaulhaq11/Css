@@ -6,8 +6,9 @@
 
 html {
     font-size: 62.5%;
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.829);
     color: white;
+    font-family: sans-serif;
 }
 
 .title {
@@ -18,7 +19,7 @@ html {
     color: black;
 }
 
-.sore {
+.score {
     position: relative;
     font-size: 2rem;
     color: white;
@@ -37,7 +38,7 @@ html {
     background-color: red;
     top: 2.5rem;
     left: -2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -46,7 +47,7 @@ html {
     background-color: red;
     top: 2.5rem;
     right: -2.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -63,9 +64,10 @@ html {
 .image {
     border: .4rem solid white;
     border-radius: 50%;
-    margin: 1rem;
+    margin: 1rem 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    padding: 1rem;
 }
 
 .image:hover {
@@ -74,6 +76,6 @@ html {
 
 .move {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-top: 1rem;
 }

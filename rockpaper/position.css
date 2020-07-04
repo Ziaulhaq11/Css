@@ -1,0 +1,81 @@
+* {
+    padding: 0em;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: sans-serif;
+    background-color: grey;
+    height: 150%;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+    background-color: tomato;
+    text-transform: uppercase;
+}
+
+.boxes {
+    width: 100%;
+    text-align: center;
+    background: green;
+    padding: 20px;
+    position:absolute;
+}
+
+.box {
+    font-weight: bold;
+    width: 60%;
+    margin: 0px auto;
+    padding: 40px;
+    font-size: 24px;
+}
+
+.box1{
+    background: greenyellow;
+}
+
+.box2 {
+    background: indigo;
+    position: relative; /*so if we put 0 to top and left it doesnt move because unlike absolute its starting point doesnt webpage or teh
+                        parent position its position is where it is so if we say top 100px then it will move from where it positioned */
+    top: 100px;
+    left: 100px;  /*and another thing is unlike  absolute when box2 moves the other elements takes the space of box2 but here the space  will be empty*/
+}
+/*.box2{
+    background: indigo;
+    position: absolute;  /*absolute position sees the nearest parent position if its static it takes top,left of the webpage and if parent
+                        is absolute  then it goes top and left of the parent container . like here the parent is div boxes
+    top: 0;
+    left: 0;
+}*/
+
+/*.box2{
+    background: indigo;
+    position: fixed;
+    top: 100px;  /*it overlaps other element it other elements will go automatically on top. Usually it uses for navigation buttons*/
+   /* left: 0;/*position -- inherit inherits the parent position if parent has some position*/
+
+
+.box3{
+    background: lightblue;
+}
+
+.box4{
+    background: lightseagreen;
+}
+
+.dummybox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: grey;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
