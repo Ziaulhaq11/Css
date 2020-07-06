@@ -57,7 +57,7 @@ color: blue;
 		background size  : cover this will adjust the background image size based on webpage.
 	    text-shadow: 3px 3px 3px black; /*right or leftshadow  top or bottom shadow  sizeof the  shadow*/
     
-    [type:checkbox]{}
+    input[type:checkbox]{}
 
 --var-name : value
 :root{} For globalvariables
@@ -136,6 +136,7 @@ adjacent sibling selector (+)
 general sibling selector (~)
 
 * {}
+.links:first-child()/last-child()
 .links li:nth-child(1)
 Specificity : element selecor are lower than classes.classes are lower than id and id is lower than inline style and most importantly 'important'
 margin  : 0px auto (auto sets in centre if your width is 100% or less than)
@@ -171,6 +172,8 @@ Absolute   -- it doesnt care about the container so if you set top to 0rem then 
 Relative   -- it care about container so if you set to 0rem it will set in the container
 Fixed    -- it will stick in one place
 Sticky   -- it will stick once it reaches some condition like (top:0) when it reaches.
+Initial --
+Inherit -- it inherits
 
 transform: translate(-50%, -50%);  /*x and y*/
 
@@ -188,6 +191,9 @@ button:hover {
 background-color:
 cursor : pointer;
 
+a:active {
+a:visited {  -- if background is set to yellow then when we visit that links it turn yellow and it based on link.
+
 input:focus{
 background-color:
 
@@ -202,7 +208,17 @@ used to position the elements but problem is it breaks other content to fix this
     clear: both;
 }
 
+line-height : to set the height between elementss
 
+a {background-color : yellow;}
+selector ;declaration start; property; property/value separator; value;declaration separator;declaration end;
+
+text-decoration : none,underline
+text-transform : uppercase
+word-spacing,letter-spacing
+
+instead of marks in lists we can put image
+list-style-image : url()
 
 
 
