@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Css Grids
+	</title>
+	<style>
+		.wrapper {
+			display: grid;
+			grid-template-columns: 70% 30%;
+			/*grid-column-gap: 1rem;
+			grid-row-gap: 1rem;*/
+			grid-gap: 1rem;
+		}
+
+		.wrapper div {
+			background: grey;
+			padding:  1rem;
+		}
+		.wrapper div:nth-child(odd){
+			background: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident accusamus quod incidunt quidem assumenda animi ullam placeat. Odit sit neque dolor, nisi eaque libero quisquam soluta dignissimos, dolorem, enim aut voluptatem iure aspernatur necessitatibus ex magnam ipsam sapiente pariatur saepe tempore. Eligendi minima nostrum, eveniet itaque repellat dolore impedit repellendus maxime excepturi nam mollitia voluptatibus assumenda earum qui unde quis molestiae vel tenetur facilis adipisci explicabo, vero ut quam laudantium. Magni aspernatur ipsum, fugit repellendus nisi asperiores eligendi, eos exercitationem!
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aliquam iste rem excepturi ullam obcaecati, distinctio illum repellendus odio voluptate! Alias dolores odio totam numquam fugiat nulla, praesentium accusamus fugit.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, quasi sint facilis, quas culpa ea accusantium aliquid facere nam beatae sequi reiciendis! Amet minima vero quia ullam nobis magni iure similique facere est incidunt distinctio ut numquam nostrum libero vitae recusandae consequuntur, velit! Alias fuga unde, nesciunt aspernatur officiis optio eum qui minima porro dignissimos maiores consectetur similique velit voluptates, minus nihil labore fugiat aperiam neque assumenda ducimus corrupti quaerat molestias quidem eos. Soluta, earum dignissimos deleniti iure, sint ipsam.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consectetur, reprehenderit ut, quia adipisci molestias vel omnis provident maxime aut excepturi sequi dolore quisquam, rerum exercitationem tenetur labore pariatur similique.
+		</div>
+	</div>
+</body>
+</html>

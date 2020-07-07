@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid</title>
+	<style>
+		.wrapper{
+			display: grid;
+			/*grid-template-columns: 1fr 2fr 1fr;
+			grid-template-columns: repeat(4, 1fr 2fr);*/
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 1rem;
+			/*grid-auto-rows: 100px;Here the problem i am facing is text is so much so the text is going away.*/
+			grid-auto-rows: minmax(100px, auto) /*it only stretches that row*/
+		}
+
+		.nested {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: 70px;
+			grid-gap: 1rem;
+		}
+		.nested > div {
+			border: #333 solid 1px;
+			padding: 1rem;
+		}
+		.wrapper>div {
+			background: grey;
+			padding:  1rem;
+		}
+		.wrapper>div:nth-child(odd){
+			background: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div>
+			Lorem ipsum dolor sit.
+		</div>
+		<div>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempore, esse corporis quidem accusamus vero nihil amet temporibus unde excepturi, porro corrupti. Ex quis quibusdam,
+			 recusandae non incidunt delectus veniam mollitia aspernatur amet deleniti nihil totam quaerat explicabo blanditiis qui.
+		</div>
+		<div class="nested">
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+		</div>
+		<div>
+			Lorem ipsum dolor sit.
+		</div>
+		<div>
+			Lorem ipsum dolor sit.
+		</div>
+		<div>
+			Lorem ipsum dolor sit.
+		</div>
+		<div>
+			Lorem ipsum dolor sit.
+		</div>
+		<div>
+			Lorem ipsum dolor sit.
+		</div>
+		<div>
+			Lorem ipsum dolor sit.
+		</div>
+	</div>
+</body>
+</html>
