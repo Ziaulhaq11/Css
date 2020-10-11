@@ -100,16 +100,20 @@ button {
 
 .main {
     float: left;
-    width: 70%;
+    width: 65%;
     box-sizing: border-box;
 }
 
 .side {
     float: right;
-    background: black;
+    background: rgba(0, 0, 0, 0.781);
     color: white;
-    width: 30%;
+    width: 35%;
     box-sizing: border-box;
+}
+
+.side p {
+    padding: 5px;
 }
 
 .bg {
